@@ -1,0 +1,30 @@
+{
+  "name": "ProductInterest",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID of the future product"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Name of the product"
+    },
+    "full_name": {
+      "type": "string",
+      "description": "Customer's full name"
+    },
+    "phone_or_whatsapp": {
+      "type": "string",
+      "description": "Phone or WhatsApp number"
+    },
+    "message": {
+      "type": "string",
+      "description": "Optional message"
+    }
+  },
+  "required": [
+    "product_id",
+    "full_name"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "price": {
+      "type": "number",
+      "description": "Current price in GEL"
+    },
+    "original_price": {
+      "type": "number",
+      "description": "Original price before discount"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "accessories",
+        "food",
+        "treats",
+        "toys",
+        "beds",
+        "grooming",
+        "health",
+        "clothing",
+        "training"
+      ],
+      "description": "Product category"
+    },
+    "tag": {
+      "type": "string",
+      "enum": [
+        "bestseller",
+        "new",
+        "sale",
+        "limited"
+      ],
+      "description": "Product tag/badge"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Main product image URL"
+    },
+    "extra_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional product images"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the product is in stock"
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Available color hex codes"
+    },
+    "sizes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Available sizes"
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "DemandVote",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID of the future product voted for"
+    }
+  },
+  "required": [
+    "product_id"
+  ]
+}

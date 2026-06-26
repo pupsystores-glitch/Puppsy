@@ -1,0 +1,40 @@
+{
+  "name": "FutureProduct",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Future product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Product image URL"
+    },
+    "demand_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of votes/demand"
+    },
+    "demand_goal": {
+      "type": "number",
+      "default": 1000,
+      "description": "Demand goal to reach"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "coming_soon",
+        "launched"
+      ],
+      "default": "coming_soon",
+      "description": "Product availability status"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

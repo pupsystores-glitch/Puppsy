@@ -1,0 +1,26 @@
+{
+  "name": "UserStory",
+  "type": "object",
+  "properties": {
+    "customer_name": {
+      "type": "string",
+      "description": "Customer name"
+    },
+    "testimonial": {
+      "type": "string",
+      "description": "Customer testimonial"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Story image URL"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Rating out of 5"
+    }
+  },
+  "required": [
+    "customer_name",
+    "testimonial"
+  ]
+}
