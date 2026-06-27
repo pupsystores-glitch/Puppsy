@@ -1,4 +1,4 @@
-import base44 from "@base44/vite-plugin"
+import base44 from "@base44/ ннvite-plugin"
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
@@ -17,4 +17,7 @@ export default defineConfig({
     }),
     react(),
   ]
+  export default {
+    base:"/Puppsy/",
+}
 });
